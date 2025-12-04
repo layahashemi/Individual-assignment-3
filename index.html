@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Life Expectancy vs Adult Mortality – Bubble Chart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- D3 v7 -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <main class="page">
+    <h1>Life Expectancy vs Adult Mortality</h1>
+    <p class="subtitle">
+      Each bubble represents a country (year 2015). Position encodes schooling and life expectancy,
+      bubble size encodes adult mortality, and color encodes development status.
+    </p>
+
+    <!-- Status Filter -->
+    <div id="status-filter">
+      <button data-status="All">All</button>
+      <button data-status="Developed">Developed</button>
+      <button data-status="Developing">Developing</button>
+    </div>
+
+    <!-- Chart container -->
+    <div id="chart-container"></div>
+
+    <!-- Tooltip -->
+    <div id="tooltip" class="tooltip" style="opacity: 0;"></div>
+
+    <p class="note">
+      Data source: merged life expectancy dataset from our group project.
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
